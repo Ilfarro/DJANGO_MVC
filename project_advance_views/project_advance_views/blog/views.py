@@ -16,3 +16,7 @@ def input_post(request):
     else:
         form = PostForm()
     return render(request, 'blog/input_post.html', {'form':form})
+
+def post_detail(request, post_id):
+    post = Blog_post.objects.get(pk=post_id)
+    return render(request, 'blog/post_detail.html', {'post':post})

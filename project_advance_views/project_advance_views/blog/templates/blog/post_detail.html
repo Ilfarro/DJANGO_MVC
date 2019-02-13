@@ -1,0 +1,28 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <img style="width: 640px" src="{{post.picture}}" alt="kendala-sepulsa">
+            </div>
+        </div>
+        <div class="row blog-row-1">
+            <div class="col-md-6">
+                <p>{{post.created_date}}</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>{{post.comment_count}} comment</p>
+            </div>
+            <div class="col-md-12">
+                <h2>{{post.title}}</h2>
+                <p>{{post.content}}</p>
+                <p class="text-primary"><a href="{% url 'blog' %}">Kembali</a></p>
+            </div>
+        </div>
+        <hr width="680px">
+    </div>
+
+    <br><br>
+
+{% endblock %}
