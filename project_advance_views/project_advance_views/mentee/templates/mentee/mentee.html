@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>Our Mentee</h1>
+                <br>
+            </div>
+        </div>
+        {% for mentee in mentees %}
+        <div class="row">
+            <div class="col-md-4 text-right">
+                <img class="mentee-foto" src="{{mentee.picture}}" alt="stip job">
+            </div>
+            <div class="col-md-8">
+                <h2>{{mentee.name}}</h2>
+                <p>"{{mentee.quote}}"</p>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+        <br><br><br><br><br><br>
+    </div>
+
+{% endblock %}

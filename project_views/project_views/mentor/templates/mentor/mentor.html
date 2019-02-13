@@ -1,0 +1,47 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>Our Mentor</h1>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-right">
+                <img class="w-100 mentor-foto" src="{% static 'images/people-andreas.png' %}" alt="people-andreas">
+            </div>
+            <div class="col-md-8 pl-5">
+                <h2 class="mentor-nama">Andreas Nugroho</h2>
+                <p>Software Ninja (5 years experience)</p>
+                <p>"Great place to learn about programming. Come join us!"</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 text-right">
+                <img class="w-100 mentor-foto" src="{% static 'images/people-ramdhan.png' %}" alt="people-ramdhan">
+            </div>
+            <div class="col-md-8 pl-5">
+                <h2 class="mentor-nama">Ramadhan Hidayat</h2>
+                <p>Master of Chaos (10 years experience)</p>
+                <p>"We make this program with passion, hard work, and heart. Let's get rock with us!"</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 text-right">
+                <img class="w-100 mentor-foto" src="{% static 'images/people-trimo.png' %}" alt="people-trimo">
+            </div>
+            <div class="col-md-8 pl-5">
+                <h2 class="mentor-nama">Trimo Leksono</h2>
+                <p>Magician (8 years experience)</p>
+                <p>"The best place for who want to be a great IT talent."</p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'images/benefit.png' %}" alt="benefit">
+            </div>
+            <div class="col-8">
+                <h3>Learn awesome tech</h3>
+                <p>You will learn about programming language, such as Python and Javascript, build back-end apps using Flask framework with microservice concept, build client-site apps using React Library, etc.</p>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/search-job.png' %}" alt="search-job">
+            </div>
+            <div class="col-8">
+                <h3>Land new job</h3>
+                <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer position and other tech position such as Quality Engineer, System Analyst, etc.</p>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/get-paid.png' %}" alt="get-paid">
+            </div>
+            <div class="col-8">
+                <h3>Get paid to learn</h3>
+                <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participating. Cool, right?</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'images/mission.png' %}" alt="mission">
+            </div>        
+            <div class="col-8">
+                <h2><strong>Who are we?</strong></h2>
+                <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 months of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia</p>
+                <br><br>
+                <h2><strong>What is our mission?</strong></h2>
+                <p>We want to improve capability Tech Talent in Indonesia</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <!-- WHAT WILL YOU LEARN? -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">What will you learn?</h2>
+            </div>
+        </div>
+        <div class="row box-home text-center">
+            <div class="col-md-3">
+                <img class="home-logo" src="{% static 'images/learn-html.png' %}" alt="learn-html">
+            </div>
+            <div class="col-md-3">
+                <img class="home-logo" src="{% static 'images/learn-programming.png' %}" alt="learn-programming">
+            </div>
+            <div class="col-md-3">
+                <img style="padding: 55px 50px;" class="home-logo" src="{% static 'images/learn-git.png' %}" alt="learn-git">
+            </div>
+            <div class="col-md-3">
+                <img style="padding: 75px 50px;" class="home-logo" src="{% static 'images/learn-api.png' %}" alt="learn-api">
+            </div>
+        </div>
+        <div class="row box-home text-center">
+            <div class="col-md-3">
+                <img style="padding: 60px 40px;" class="home-logo" src="{% static 'images/learn-react.png' %}" alt="learn-react">
+            </div>
+            <div class="col-md-3">
+                <img style="padding: 65px 50px;" class="home-logo" src="{% static 'images/learn-tdd.png' %}" alt="learn-tdd">
+            </div>
+            <div class="col-md-3">
+                <img style="padding: 50px 50px;" class="home-logo" src="{% static 'images/learn-server.png' %}" alt="learn-server">
+            </div>
+            <div class="col-md-3">
+                <img style="padding: 50px 40px;" class="home-logo" src="{% static 'images/learn-scrum.png' %}" alt="learn-scrum">
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+{% endblock %}
+    

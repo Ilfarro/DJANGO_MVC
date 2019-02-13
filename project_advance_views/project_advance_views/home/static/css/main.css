@@ -1,0 +1,62 @@
+/* HEADER */
+.bawah-nav {
+    padding: 0;
+}
+
+.jumbotron {
+    background: #00CAD1
+}
+
+
+/* ISI */
+/* HOME */
+.box-home {
+    margin: 30px;
+}
+
+.home-logo {
+    padding: 55px 85px;
+    border: 1px solid rgba(170, 154, 154, 0.739);
+    width: 230px;
+    height: 180px;
+}
+
+/* BLOG */
+.blog-row-1 {
+    padding: 0px 235px;
+}
+
+
+/* MENTOR */
+.mentor-nama {
+    color: rgb(105, 105, 105);
+    padding: 0;
+    margin: 0;
+}
+
+.mentor-foto {
+    margin-bottom: 30px;
+}
+
+/* MENTEE */
+.mentee-foto {
+    width: 70%;
+}
+
+/* AUTHOR */
+.author-row {
+    padding: 0px 200px;
+}
+
+.maps {
+    
+}
+
+/* FOOTER */
+.footer-1 {
+    background-color: #00CAD1
+}
+
+.footer-2 {
+    background-color: black
+}

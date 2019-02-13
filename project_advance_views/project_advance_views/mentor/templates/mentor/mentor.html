@@ -1,0 +1,28 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>Our Mentor</h1>
+                <br>
+            </div>
+        </div>
+        {% for mentor in mentors %}
+        <div class="row">
+            <div class="col-md-4 text-right">
+                <img class="w-100 mentor-foto" src="{{mentor.picture}}" alt="people-andreas">
+            </div>
+            <div class="col-md-8 pl-5">
+                <h2 class="mentor-nama">{{mentor.name}}</h2>
+                <p>{{mentor.profession}}</p>
+                <p>"{{mentor.quote}}"</p>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+        <br><br><br><br><br><br><br>
+    </div>
+
+{% endblock %}

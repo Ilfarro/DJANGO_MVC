@@ -1,0 +1,36 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ISI -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <a href="{% url 'input_post' %}" class="btn btn-primary">Create New Post</a>
+            </div>
+        </div>
+        <br><br>
+        {% for blog_post in blog_posts %}
+        <div class="row text-center">
+            <div class="col-md-12">
+                <img style="max-width: 640px" src="{{blog_post.picture}}" alt="kendala-sepulsa">
+            </div>
+        </div>
+        <div class="row blog-row-1">
+            <div class="col-md-6">
+                <p>{{blog_post.created_date}}</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>{{blog_post.comment_count}} comment</p>
+            </div>
+            <div class="col-md-12">
+                <h2></h2>
+                <p>{{blog_post.content}}</p>
+                <p class="text-primary"><a href="#">Baca Selengkapnya</a></p>
+            </div>
+        </div>
+        {% endfor %}
+        <hr width="680px">
+    </div>
+    <br><br>
+
+{% endblock %}
